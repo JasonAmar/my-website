@@ -23,6 +23,12 @@ html {
   font-size: 17px;
 }
 
+.topnav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
@@ -33,4 +39,15 @@ html {
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
+}
+
+/* Style for image */
+header img {
+  float: left;
+  display: inline;
+  width: 20%;
+}
+
+h1, h2 {
+  text-align: center;
 }
