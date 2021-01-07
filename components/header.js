@@ -43,7 +43,7 @@ headerTemplate.innerHTML = `
     <header>
         <nav>
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="about.html">About</a></li>
@@ -57,9 +57,22 @@ class Header extends HTMLElement {
     }
 
     connectedCallback() {
-        const shadowRoot = this.attachShadow({mode:'closed'});
+        const shadowRoot = this.attachShadow({mode:"open"});
         shadowRoot.appendChild(headerTemplate.content);
+        window.addEventListener("load", function(){hightlight(this, shadowRoot);}, true);
     }
 }
 
 customElements.define('header-component', Header);
+
+function hightlight (window, current) {
+    const URL = window.location.pathname;
+    let temp = current.querySelectorAll("a");
+    for (var i = 0; i<temp.length; i++) {
+        if (URL.includes(temp[i].getAttribute("href"))) {
+            temp[i].setAttribute("href", "#");
+            temp[i].classList.add("active");
+            break;
+        }
+    }
+}
