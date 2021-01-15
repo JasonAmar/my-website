@@ -1,4 +1,4 @@
-const headerTemplate = document.createElement('template');
+const headerTemplate = document.createElement('template')
 headerTemplate.innerHTML = `
     <style>
     nav {
@@ -49,30 +49,30 @@ headerTemplate.innerHTML = `
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-    <header>`;
+    <header>`
 
 class Header extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor () {
+    super()
+  }
 
-    connectedCallback() {
-        const shadowRoot = this.attachShadow({mode:"open"});
-        shadowRoot.appendChild(headerTemplate.content);
-        window.addEventListener("load", function(){hightlight(this, shadowRoot);}, true);
-    }
+  connectedCallback () {
+    const shadowRoot = this.attachShadow({ mode: 'open' })
+    shadowRoot.appendChild(headerTemplate.content)
+    window.addEventListener('load', function () { hightlight(this, shadowRoot) }, true)
+  }
 }
 
-customElements.define('header-component', Header);
+customElements.define('header-component', Header)
 
 function hightlight (window, current) {
-    const URL = window.location.pathname;
-    let temp = current.querySelectorAll("a");
-    for (var i = 0; i<temp.length; i++) {
-        if (URL.includes(temp[i].getAttribute("href"))) {
-            temp[i].setAttribute("href", "#");
-            temp[i].classList.add("active");
-            break;
-        }
+  const URL = window.location.pathname
+  const temp = current.querySelectorAll('a')
+  for (let i = 0; i < temp.length; i++) {
+    if (URL.includes(temp[i].getAttribute('href'))) {
+      temp[i].setAttribute('href', '#')
+      temp[i].classList.add('active')
+      break
     }
+  }
 }

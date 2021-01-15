@@ -1,4 +1,4 @@
-const footerTemplate = document.createElement('template');
+const footerTemplate = document.createElement('template')
 footerTemplate.innerHTML = `
   <style>
     footer {
@@ -47,17 +47,17 @@ footerTemplate.innerHTML = `
       <li><a href="https://twitter.com/my-twitter-profile"><i class="fab fa-twitter"></i></a></li>
       <li><a href="https://www.linkedin.com/in/my-linkedin-profile"><i class="fab fa-linkedin"></i></a></li>
     </ul>
-  </footer>`;
+  </footer>`
 
 class Footer extends HTMLElement {
-    constructor() {
-        super();
-    }
+  constructor () {
+    super()
+  }
 
-    connectedCallback() {
-      const shadowRoot = this.attachShadow({mode:'closed'});
-      shadowRoot.appendChild(footerTemplate.content);
-    }
+  connectedCallback () {
+    const shadowRoot = this.attachShadow({ mode: 'closed' })
+    shadowRoot.appendChild(footerTemplate.content)
+  }
 }
 
-customElements.define('footer-component', Footer);
+customElements.define('footer-component', Footer)
