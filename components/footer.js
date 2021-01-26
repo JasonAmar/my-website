@@ -2,22 +2,19 @@ const footerTemplate = document.createElement('template')
 footerTemplate.innerHTML = `
   <style>
     footer {
-      height: 60px;
-      padding: 0 10px;
-      list-style: none;
+      height: 80px;
+      padding: 0;
+      width: 100%;
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       background-color: #dfdfe2;
+      border-top: 2px solid black;
     }
-    
-    ul li {
-      list-style: none;
-      display: inline;
-    }
-    
+        
     a {
-      margin: 0 15px;
+      margin: 0;
       color: inherit;
       text-decoration: none;
     }
@@ -28,25 +25,33 @@ footerTemplate.innerHTML = `
     }
     
     .social-row {
-      font-size: 20px;
+      margin: 0;
+      padding: 0;
+      width: 20%;
+      height: 60%;
+      display: inline-flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
     
-    .social-row li a {
-      margin: 0 15px;
+    img {
+      width: 2.5em;
+      height: 2.5em;
     }
+
+    p {
+      margin: 0;
+      font-size: 110%;
+    }
+
   </style>
 
   <footer>
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="work.html">Work</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <ul class="social-row">
-      <li><a href="https://github.com/my-github-profile"><i class="fab fa-github"></i></a></li>
-      <li><a href="https://twitter.com/my-twitter-profile"><i class="fab fa-twitter"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/my-linkedin-profile"><i class="fab fa-linkedin"></i></a></li>
-    </ul>
+    <div class="social-row">
+      <a href="https://github.com/JasonAmar"><img src="images/linkedin.png"></img></a>
+      <a href="https://www.linkedin.com/in/jason-amar/"><img src="images/github.png"></img></a>
+    </div>
+    <p>2021 © Jason Amar</p>
   </footer>`
 
 class Footer extends HTMLElement {
@@ -55,7 +60,7 @@ class Footer extends HTMLElement {
   }
 
   connectedCallback () {
-    const shadowRoot = this.attachShadow({ mode: 'closed' })
+    const shadowRoot = this.attachShadow({ mode: 'open' })
     shadowRoot.appendChild(footerTemplate.content)
   }
 }
