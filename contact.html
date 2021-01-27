@@ -9,6 +9,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/textbox.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -16,6 +17,12 @@
     <main>
         <div class="content-wrap">
             <h1>Contact Me</h1>
+            <form action="/action_page.php">
+                <custom-textbox label="First Name"></custom-textbox>
+                <custom-textbox label="Last Name"></custom-textbox>
+                <input type="submit" value="Submit">
+            </form>
+            
         </div>
     </main>
     <footer-component></footer-component>
