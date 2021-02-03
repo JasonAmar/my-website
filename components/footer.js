@@ -48,8 +48,8 @@ footerTemplate.innerHTML = `
 
   <footer>
     <div class="social-row">
-      <a href="https://github.com/JasonAmar"><img src="images/linkedin.png"></img></a>
-      <a href="https://www.linkedin.com/in/jason-amar/"><img src="images/github.png"></img></a>
+      <a href="https://www.linkedin.com/in/jason-amar/"><img src="images/linkedin.png"></img></a>
+      <a href="https://github.com/JasonAmar"><img src="images/github.png"></img></a>
     </div>
     <p>2021 © Jason Amar</p>
   </footer>`

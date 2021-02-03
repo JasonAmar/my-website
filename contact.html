@@ -10,6 +10,7 @@
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
     <script src="components/textbox.js" type="text/javascript" defer></script>
+    <script src="components/textarea.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -20,7 +21,9 @@
             <form action="/action_page.php">
                 <custom-textbox label="First Name"></custom-textbox>
                 <custom-textbox label="Last Name"></custom-textbox>
-                <input type="submit" value="Submit">
+                <custom-textbox label="Email"></custom-textbox> 
+                <custom-textarea label="Test" rows="5" cols="33"></custom-textarea>
+                <input type="button" value="Submit">
             </form>
             
         </div>
