@@ -2,8 +2,10 @@
 const textareaTemplate = document.createElement('template')
 textareaTemplate.innerHTML = `
   <style>
+
 textarea {
     padding: 10px;
+    width: calc(100% - 20px);
     line-height: 1.5;
     border-radius: 5px;
     border: 1px solid #ccc;

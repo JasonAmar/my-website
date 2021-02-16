@@ -11,8 +11,10 @@ class Textbox extends HTMLElement {
     const textboxTemplate = document.createElement('template')
     textboxTemplate.innerHTML = `
   <style>
+
   input {
     display: inline-block;
+    width: calc(100% - 20px);
     padding: 10px;
     line-height: 1.5;
     border-radius: 5px;
@@ -22,6 +24,7 @@ class Textbox extends HTMLElement {
 
   label {
     display: block;
+    margin-bottom: 10px;
   }
   </style>`
 
