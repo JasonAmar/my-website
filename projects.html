@@ -9,13 +9,23 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="scripts/getProjects.js" type="text/javascript" async></script>
 </head>
 
 <body>
     <header-component></header-component>
     <main>
         <div class="content-wrap">
-            <h1>Projects</h1>
+            <h1 class="padB40">Projects</h1>
+            <table>
+                <thead>
+                    <th scope="col">Title</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Last Updated</th>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
         </div>
     </main>
     <footer-component></footer-component>

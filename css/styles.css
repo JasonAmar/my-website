@@ -46,6 +46,23 @@ main {
     border-color: #343a40;
 }
 
+th, td {
+  text-align: center;
+  padding: 0 1em;
+  border: 3px solid black;
+}
+
+table {
+  table-layout: fixed;
+  width: auto;
+  border-collapse: collapse;
+  border: 3px solid black;
+}
+
+h1 {
+  text-align: center;
+}
+
 .padB40 {
   padding-bottom: 40px;
 }
