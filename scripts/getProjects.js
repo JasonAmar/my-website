@@ -7,15 +7,16 @@ request.send()
 
 request.onload = function () {
   const response = this.response
+  console.log(response)
   for (let index = 0; index < response.length; index++) {
     const row = document.createElement('tr')
     const name = response[index].name
     const description = response[index].description
-    const updatedDate = response[index].updated_at
+    const latestCommitDate = response[index].pushed_at
     const rowContent = `
     <td scope="row">${name}</td>
     <td>${description}</td>
-    <td>${updatedDate}</td>
+    <td>${latestCommitDate}</td>
     `
     row.innerHTML = rowContent
     tableBody.append(row)
