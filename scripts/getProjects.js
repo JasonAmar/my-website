@@ -7,7 +7,6 @@ request.send()
 
 request.onload = function () {
   const response = this.response
-  console.log(response)
   for (let index = 0; index < response.length; index++) {
     const row = document.createElement('tr')
     const name = response[index].name

@@ -5,7 +5,7 @@ textareaTemplate.innerHTML = `
 
 textarea {
     padding: 10px;
-    width: calc(100% - 20px);
+    width: 100%
     line-height: 1.5;
     border-radius: 5px;
     border: 1px solid #ccc;

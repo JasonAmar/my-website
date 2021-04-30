@@ -1,75 +1,40 @@
-/* Global styles
-------------------------------------*/
-html {
+*, *:before, *:after {
   box-sizing: border-box;
-  height:100%;
+  margin: 0;
+  border: 0;
 }
 
 body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-}
-
-main {
-  flex: 1;
-  display: flex;
+    height: 100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
 .content-wrap {
-  margin: 0 auto;
-  width: 50%;
-  padding-bottom: 1.5rem;
-}
-
-.btn {
-    display: inline-block;
-    font-weight: 400;
     text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: .5rem .75rem;
-    font-size: 1rem;
-    line-height: 1.25;
-    border-radius: .25rem;
-    transition: all .15s ease-in-out;
-}
-
-.btn-dark {
-    color: #fff;
-    background-color: #343a40;
-    border-color: #343a40;
-}
-
-th, td {
-  text-align: center;
-  padding: 0 1em;
-  border: 3px solid black;
-}
-
-table {
-  table-layout: fixed;
-  width: auto;
-  border-collapse: collapse;
-  border: 3px solid black;
-}
-
-h1 {
-  text-align: center;
 }
 
 .padB40 {
-  padding-bottom: 40px;
+  padding-bottom: 2rem;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-  margin: 0;
-  border: 0;
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: auto;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: #4CAF50;
+  color: white;
 }

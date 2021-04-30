@@ -14,7 +14,7 @@ class Textbox extends HTMLElement {
 
   input {
     display: inline-block;
-    width: calc(100% - 20px);
+    width: 100%
     padding: 10px;
     line-height: 1.5;
     border-radius: 5px;
