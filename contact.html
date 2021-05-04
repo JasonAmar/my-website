@@ -17,14 +17,16 @@
     <header-component></header-component>
     <main>
         <div class="content-wrap">
-            <h1 class="padB40">Send me an email</h1>
-            <form method=POST action="./scripts/email.php">
-                <custom-textbox label="Name"></custom-textbox>
-                <custom-textbox label="Email address"></custom-textbox>
-                <custom-textbox label="Subject"></custom-textbox>
-                <custom-textarea label="Message" rows="5" cols="33"></custom-textarea>
-                <input class="btn btn-dark" type="submit">
-            </form>
+            <div style="display:inline-block; text-align: left;">
+                <h1 class="padB40">Send me an email</h1>
+                <form method=POST action="./scripts/email.php">
+                    <custom-textbox label="Name"></custom-textbox>
+                    <custom-textbox label="Email address"></custom-textbox>
+                    <custom-textbox label="Subject"></custom-textbox>
+                    <custom-textarea label="Message" rows="5" cols="33"></custom-textarea>
+                    <input class="btn btn-dark" type="submit">
+                </form>
+            </div>
         </div>
     </main>
     <footer-component></footer-component>

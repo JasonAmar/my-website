@@ -13,6 +13,11 @@ body {
     text-align: center;
 }
 
+.content-body {
+    display: flex;
+    padding: 0 5%;
+}
+
 .padB40 {
   padding-bottom: 2rem;
 }
@@ -37,4 +42,28 @@ th {
   padding-bottom: 12px;
   background-color: #4CAF50;
   color: white;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    border-radius: .25rem;
+    transition: all .15s ease-in-out;
+}
+
+.btn-dark {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #343a40;
 }

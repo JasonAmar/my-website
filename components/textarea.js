@@ -5,9 +5,7 @@ textareaTemplate.innerHTML = `
 
 textarea {
     padding: 10px;
-    width: 100%
     line-height: 1.5;
-    border-radius: 5px;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px #999;
 }
@@ -36,8 +34,8 @@ class Textarea extends HTMLElement {
 
     const customElement = document.createElement('div')
     customElement.innerHTML =
-    `<label for="textarea">${labelText}:</label>
-    <textarea id="textarea" name="${labelText}" rows="${rows}" cols="${cols}"></textarea><br><br>`
+    `<label for="textarea">${labelText}</label>
+    <textarea id="textarea" placeholder="..." name="${labelText}" rows="${rows}" cols="${cols}"></textarea><br><br>`
 
     shadowRoot.append(customElement)
   }
