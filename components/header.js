@@ -1,10 +1,6 @@
 const headerTemplate = document.createElement('template')
 headerTemplate.innerHTML = `
-    <style>
-    header {
-      padding-bottom: 1.5rem;
-    }
-    
+    <style>    
     nav {
         display: flex;
         background-color: #333;

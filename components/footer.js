@@ -2,8 +2,6 @@ const footerTemplate = document.createElement('template')
 footerTemplate.innerHTML = `
   <style>
     footer {
-      position: absolute;
-      bottom: 0;
       height: 80px;
       padding: 0;
       width: 100%;
