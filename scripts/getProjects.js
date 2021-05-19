@@ -1,5 +1,6 @@
 const tableBody = document.querySelector('tbody')
 const requestURL = 'https://api.github.com/users/JasonAmar/repos'
+// eslint-disable-next-line no-undef
 const request = new XMLHttpRequest()
 request.open('GET', requestURL)
 request.responseType = 'json'
@@ -15,7 +16,7 @@ request.onload = function () {
     const rowContent = `
     <td scope="row">${name}</td>
     <td>${description}</td>
-    <td>${latestCommitDate}</td>
+    <td>${new Date(latestCommitDate).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' })}</td>
     `
     row.innerHTML = rowContent
     tableBody.append(row)
