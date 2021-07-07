@@ -5,6 +5,7 @@ headerTemplate.innerHTML = `
         display: flex;
         background-color: #333;
         overflow: hidden;
+        justify-content: space-evenly;
     }
 
     /* Style the links inside the navigation bar */
